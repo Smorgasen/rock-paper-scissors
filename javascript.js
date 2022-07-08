@@ -35,10 +35,27 @@ function playRound(playerSelection, computerSelection) {
         return console.log("Good game! No one won")
     }
 }       
-// selection must be case insensitive
+
+
+// a function called game with the playRound function inside of this one to play a 5 round game that keeps score and reports a winner or loser at the end
+function game() {
+    for (let i = 0; i < 5; i++) {
+        playerSelection = prompt("Choose: Rock, Paper or Scissors!")
+        if (playRound("rock", "paper")) {
+            console.log (`You Lose! Player ${i}: Computer ${i+1}`)
+        }
+        // if (playRound() === "You Lose! Paper beats Rock" || playRound() === "You Lose! Scissors beats Paper" || playRound() === "You Lose! Rock beats Scissors") {
+        //     console.log(`You Lose! Player ${i}: Computer ${i+1}`)
+        // }
+        
+    }
+}
+
 
 // console output
+
 // console.log (playRound("RoCk", computerPlay()))
-const playerSelection = "RocK"
+let playerSelection = "0"
 const computerSelection = computerPlay()
-console.log (playRound(playerSelection, computerSelection))
+console.log(playRound(playerSelection, computerSelection))
+console.log (game())
