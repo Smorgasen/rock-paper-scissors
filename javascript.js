@@ -38,4 +38,7 @@ function playRound(playerSelection, computerSelection) {
 // selection must be case insensitive
 
 // console output
-console.log (playRound("ROCK", computerPlay()))
+// console.log (playRound("RoCk", computerPlay()))
+const playerSelection = "RocK"
+const computerSelection = computerPlay()
+console.log (playRound(playerSelection, computerSelection))
