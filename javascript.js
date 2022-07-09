@@ -12,14 +12,14 @@ function playerPrompt() {
     let playerChoice = prompt ('Choose your Fighter: "Rock", "Paper" or "Scissors"')
     playerChoice = playerChoice.toLowerCase()
     if (playerChoice != 'rock' && playerChoice != 'paper' && playerChoice != 'scissors') {
-        alert('Wrong choice! Choose "Rock", "Paper" or "Scissors"')
+        alert ('Wrong choice! Choose "Rock", "Paper" or "Scissors"')
     }
     return playerChoice
 }
 // Generate computer selection by random
 function computerPlay() {
     options = ["rock", "paper", "scissors"]
-    computerChoice = options [Math.floor(Math.random() * 3)] 
+    computerChoice = options [Math.floor(Math.random() * options.length )] 
     return computerChoice
 }
 
@@ -49,21 +49,20 @@ else if ((playerSelection === 'rock' && computerSelection === 'rock') ||
     }
     return result
     
-}  
+}   
 
 
 // Play in loop 5 times and show the overal winner
 function game() {
     for (let i = 0; (playerScore + computerScore) < 5; i++) {
         console.log(playRound(playerSelection, computerSelection))
-        console.log (`Player ${playerScore} : Computer ${computerScore}`)
+        console.log (`Player - ${playerScore} : Computer - ${computerScore}`)
     }
     let winner = (playerScore > computerScore) ?
-        (`Player wins! ${playerScore} : ${computerScore}`) :
-        (`Computer wins! ${playerScore} : ${computerScore}`)
+        (`Player wins! Congratulations! You may continue your existence inside the matrix. ${playerScore} : ${computerScore}`) :
+        (`Computer wins! The Rise of the Machines is close. Prepare to the worst. ${playerScore} : ${computerScore}`)
     console.log (winner)
 }
 // Start game and show the goodbye result
-
 game()
-console.log ('If you want to try again, please refresh the page.')
+console.log ('Game over! If you want to try again, please refresh the page.')
