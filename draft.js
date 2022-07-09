@@ -12,9 +12,8 @@ function playerPrompt() {
     let playerChoice = prompt ('Choose your Fighter: "Rock", "Paper" or "Scissors"')
     playerChoice = playerChoice.toLowerCase()
     if (playerChoice != 'rock' && playerChoice != 'paper' && playerChoice != 'scissors') {
-        alert('Wrong choice! Choose "Rock", "Paper" or "Scissors"')
+        alert ('Wrong choice! Choose "Rock", "Paper" or "Scissors"')
     }
-    return playerChoice
 }
 // Generate computer selection by random
 function computerPlay() {
@@ -49,12 +48,12 @@ else if ((playerSelection === 'rock' && computerSelection === 'rock') ||
     }
     return result
     
-}  
+}   
 
 
 // Play in loop 5 times and show the overal winner
 function game() {
-    for (let i = 0; (playerScore + computerScore) < 5; i++) {
+    for (let i = 0; (playerScore + computerScore) > 5; i++) {
         console.log(playRound(playerSelection, computerSelection))
         console.log (`Player ${playerScore} : Computer ${computerScore}`)
     }
@@ -63,6 +62,7 @@ function game() {
         (`Computer wins! ${playerScore} : ${computerScore}`)
     console.log (winner)
 }
+
 // Start game and show the goodbye result
 
 game()
