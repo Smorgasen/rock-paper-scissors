@@ -18,10 +18,11 @@ function playerPrompt() {
 }
 // Generate computer selection by random
 function computerPlay() {
-    options = ["rock", "paper", "scissors"]
+    options = ['rock', 'paper', 'scissors']
     computerChoice = options [Math.floor(Math.random() * options.length )] 
     return computerChoice
 }
+console.log (computerPlay ())
 
 // Get both player and computer choices and show round winner and return result
 function playRound(playerSelection, computerSelection) {
