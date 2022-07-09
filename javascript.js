@@ -1,61 +1,22 @@
-// const rock paper scissor as array
-const play = ["Rock", "Paper", "Scissors"]
-// const playLower = play.map(play => play.toLowerCase())
-// console.log (playLower)
+console.log('Welcome to the Rock-Paper-Scissors Game!')
 
-// a function "computerPlay" that randomly returns either rock, paper or scissors
-function computerPlay (){
-    return play [Math.floor(Math.random() * play.length)] 
-}
+let playerSelection
+let computerSelection
+let playerScore = '0'
+let computerScore = '0'
+let roundWinner = ''
 
-// a function "computerPlay" that takes two parameters "playerSelection" and "computerSelection" and returns a string that declares the winner of the round
-function playRound(playerSelection, computerSelection) {
-    computerSelection = computerPlay().toLowerCase()
-    playerSelection = playerSelection.toLowerCase()
-    
-    if (playerSelection === "rock" && computerSelection === "paper") {
-        return console.log("You Lose! Paper beats Rock")
-    }
-    else if (playerSelection === "rock" && computerSelection === "scissors") {
-        return console.log("You Won! Rock beats Scissors")
-    }
-    else if (playerSelection === "paper" && computerSelection === "rock") {
-        return console.log("You Won! Paper beats Rock")
-    }
-    else if (playerSelection === "paper" && computerSelection === "scissors") {
-        return console.log ("You Lose! Scissors beats Paper")
-    }
-    else if (playerSelection === "scissors" && computerSelection === "rock") {
-        return console.log ("You Lose! Rock beats Scissors")
-    }
-    else if (playerSelection === "scissors" && computerSelection === "paper") {
-        return console.log ("You Won! Scissors beats Paper")
-    }
-    else {
-        return console.log("Good game! No one won")
-    }
-}       
+// Get input from player and alert if input is invalid and make it case insensitive
 
 
-// a function called game with the playRound function inside of this one to play a 5 round game that keeps score and reports a winner or loser at the end
-function game() {
-    for (let i = 0; i < 5; i++) {
-        playerSelection = prompt("Choose: Rock, Paper or Scissors!")
-        if (playRound("rock", "paper")) {
-            console.log (`You Lose! Player ${i}: Computer ${i+1}`)
-        }
-        // if (playRound() === "You Lose! Paper beats Rock" || playRound() === "You Lose! Scissors beats Paper" || playRound() === "You Lose! Rock beats Scissors") {
-        //     console.log(`You Lose! Player ${i}: Computer ${i+1}`)
-        // }
-        
-    }
-}
+// Generate computer selection by random
 
 
-// console output
+// Get both player and computer choises and show round winner and return result
 
-// console.log (playRound("RoCk", computerPlay()))
-let playerSelection = "0"
-const computerSelection = computerPlay()
-console.log(playRound(playerSelection, computerSelection))
-console.log (game())
+
+
+// Play in loop 5 times and show the overal winner
+
+
+// Start game and show the goodbye result
