@@ -52,7 +52,7 @@ else if ((playerSelection === 'rock' && computerSelection === 'rock') ||
 }   
 
 
-// Play in loop 5 times and show the overal winner
+// Play in loop until sum score of both is 5 and show the overal winner
 function game() {
     for (let i = 0; (playerScore + computerScore) < 5; i++) {
         console.log(playRound(playerSelection, computerSelection))
