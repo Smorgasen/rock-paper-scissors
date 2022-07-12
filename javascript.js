@@ -1,5 +1,3 @@
-console.log('Welcome to the Rock-Paper-Scissors Game!')
-
 let playerSelection
 let computerSelection
 let playerScore = 0
@@ -12,7 +10,6 @@ function computerPlay() {
     computerChoice = options [Math.floor(Math.random() * options.length )]
     return computerChoice
 }
-console.log (computerPlay ())
 
 function playRound(playerSelection, computerSelection) {
     computerSelection = computerPlay()
@@ -23,8 +20,7 @@ if ((playerSelection === 'Rock' && computerSelection === 'Scissors') ||
     playerScore++
     result = `<br>You won! ${playerSelection} beats ${computerSelection}. <br><br> Player : ${playerScore} <br> Computer: ${computerScore} <br><br>`
     if (playerScore == 5) {
-        result += `Player wins! Congratulations! You may continue your existence inside
-            the matrix.`
+        result += `<strong>Player wins!</strong> Congratulations! You may continue your existence inside the Matrix.<br><br> Refresh the page to Restart.`
     }
 }
 
@@ -34,8 +30,8 @@ else if ((playerSelection === 'Rock' && computerSelection === 'Paper') ||
     computerScore++
     result = `<br>You lose! ${playerSelection} is beaten by ${computerSelection}. <br><br> Player : ${playerScore} <br> Computer: ${computerScore} <br><br>`
     if (computerScore == 5) {
-        result += `Computer wins! The Rise of the Machines is close.
-          Prepare to the worst.`
+        result += `<strong>Computer wins!</strong> The Rise of the Machines is close.
+          Prepare to the worst.<br><br> Refresh the page to Restart.`
     }
 }
 
@@ -55,7 +51,6 @@ btn.forEach (button => {
   })
 })
 
-console.log ('Game over! If you want to try again, please refresh the page.')
 
 
 
@@ -63,7 +58,7 @@ console.log ('Game over! If you want to try again, please refresh the page.')
 buttons that call your playRound function with the correct playerSelection
 every time a button is clicked. (you can keep the console.logs for this step) */
 
-/* Add a div for displaying results and change all of your console.logs
+/* ++ Add a div for displaying results and change all of your console.logs
 into DOM methods. */
 
 /* ++ Display the running score, and announce a winner of the game once one player
