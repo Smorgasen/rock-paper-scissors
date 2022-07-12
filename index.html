@@ -10,9 +10,43 @@
     <title>Rock-Paper-Scissors</title>
 </head>
 <body>
-  <div>
-    <p>Welcome to the Rock-Paper-Scissors game! </p>
-    <p> Choose your Fighter using button to start playing.</p>
+    <h1>Welcome to the Rock-Paper-Scissors game!</h1>
+    <h2>Choose your Fighter!</h2>
+    <h3>First to 5 Wins!</h3>
+    <div class="choice">
+        <div class="left-choice">
+            <p>Player Choice</p>
+            <div class="playerSelection"></div>
+        </div>
+        <div class="right-choice">
+            <p>Computer Choise</p>
+            <div class="computerSelection"></div>
+        </div>
+    </div>
+    <div class="optionBtn">
+        <button value="Rock">Rock</button>
+        <button value="Paper">Paper</button>
+        <button value="Scissors">Scissors</button>
+    </div>
+    <div class="scores">
+        <div class="left-score">
+            <p>Player Score</p>
+            <div class="playerScore"></div>
+        </div>
+        <div class="right-score">
+            <p>Computer Score</p>
+            <div class="computerScore"></div>
+        </div>
+    </div>
+    <div class="result-body">
+      <p>Result</p>
+      <div class="result" id="result"></div>
+      <button id="reset">Restart</button>
+    </div>
+</body>
+
+    <!-- <p> </p>
+    <p> </p>
     <div class="optionBtn">
       <button value="Rock">Rock</button>
       <button value="Paper">Paper</button>
@@ -20,6 +54,5 @@
     </div>
     <div id="result"></div>
     <button id="reset">Restart</button>
-</div>
-</body>
+</div> -->
 </html>
