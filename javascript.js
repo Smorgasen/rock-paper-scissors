@@ -7,7 +7,6 @@ let computerScore = 0
 let result = ''
 
 
-// Get input from player and alert if input is invalid and make it case insensitive
 function playerPrompt() {
     let playerChoice = prompt ('Choose your Fighter: "Rock", "Paper" or "Scissors"')
     playerChoice = playerChoice.toLowerCase()
@@ -16,15 +15,13 @@ function playerPrompt() {
     }
     return playerChoice
 }
-// Generate computer selection by random
 function computerPlay() {
     options = ['rock', 'paper', 'scissors']
-    computerChoice = options [Math.floor(Math.random() * options.length )] 
+    computerChoice = options [Math.floor(Math.random() * options.length )]
     return computerChoice
 }
 console.log (computerPlay ())
 
-// Get both player and computer choices and show round winner and return result
 function playRound(playerSelection, computerSelection) {
     playerSelection = playerPrompt()
     computerSelection = computerPlay()
@@ -49,21 +46,50 @@ else if ((playerSelection === 'rock' && computerSelection === 'rock') ||
     result = `It's a tie! Both choose ${playerSelection}`
     }
     return result
-    
-}   
 
-
-// Play in loop until sum score of both is 5 and show the overal winner
-function game() {
-    for (let i = 0; (playerScore + computerScore) < 5; i++) {
-        console.log(playRound(playerSelection, computerSelection))
-        console.log (`Player - ${playerScore} : Computer - ${computerScore}`)
-    }
-    let winner = (playerScore > computerScore) ?
-        (`Player wins! Congratulations! You may continue your existence inside the matrix. ${playerScore} : ${computerScore}`) :
-        (`Computer wins! The Rise of the Machines is close. Prepare to the worst. ${playerScore} : ${computerScore}`)
-    console.log (winner)
 }
-// Start game and show the goodbye result
-game()
+
+
+// function game() {
+//     for (let i = 0; score(playerScore, computerScore); i++) {
+//         console.log(playRound(playerSelection, computerSelection))
+//         console.log (`Player - ${playerScore} : Computer - ${computerScore}`)
+//     }
+//     let winner = (playerScore > computerScore) ?
+//         (`Player wins! Congratulations! You may continue your existence inside
+//           the matrix. ${playerScore} : ${computerScore}`) :
+//         (`Computer wins! The Rise of the Machines is close.
+//           Prepare to the worst. ${playerScore} : ${computerScore}`)
+//     console.log (winner)
+// }
+
+// game()
 console.log ('Game over! If you want to try again, please refresh the page.')
+
+
+
+/* Create three buttons, one for each selection. Add an event listener to the
+buttons that call your playRound function with the correct playerSelection
+every time a button is clicked. (you can keep the console.logs for this step) */
+
+/* Add a div for displaying results and change all of your console.logs
+into DOM methods. */
+
+/* Display the running score, and announce a winner of the game once one player
+reaches 5 points. */
+function score(playerScore, computerScore) {
+  if (playerScore == 5) {
+      result = `Player wins! Congratulations! You may continue your existence inside
+          the matrix. ${playerScore} : ${computerScore}`
+  }
+  if (computerScore == 5) {
+      result = `Computer wins! The Rise of the Machines is close.
+        Prepare to the worst. ${playerScore} : ${computerScore}`
+  }
+}
+/* You will likely have to refactor (rework/rewrite) your original code
+to make it work for this. That’s OK! Reworking old code is an important part
+of a programmer’s life. */
+
+/* Once you’re all done with your UI and made sure everything’s satisfactory,
+commit your changes to the rps-ui branch. */
