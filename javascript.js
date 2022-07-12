@@ -3,7 +3,14 @@ let computerSelection;
 let playerScore = 0;
 let computerScore = 0;
 let result = '';
-let btn = document.querySelectorAll('button');
+let btn = document.querySelectorAll('div.optionBtn button');
+let resetBtn = document.querySelector('#reset');
+
+function disableBtn() {
+    btn.forEach(button => {
+        button.disabled = true;
+    });
+}
 
 function computerPlay() {
     options = ['Rock', 'Paper', 'Scissors'];
@@ -21,8 +28,7 @@ if ((playerSelection === 'Rock' && computerSelection === 'Scissors') ||
     result = `<br>You won! ${playerSelection} beats ${computerSelection}. <br><br> Player : ${playerScore} <br> Computer: ${computerScore} <br><br>`;
     if (playerScore == 5) {
         result += `<strong>Player wins!</strong> Congratulations! You may continue your existence inside the Matrix.<br><br> Choose again to Restart.`;
-        playerScore = 0;
-        computerScore = 0;
+        disableBtn();
     }
 }
 
@@ -34,8 +40,7 @@ else if ((playerSelection === 'Rock' && computerSelection === 'Paper') ||
     if (computerScore == 5) {
         result += `<strong>Computer wins!</strong> The Rise of the Machines is close.
         Prepare to the worst.<br><br> Choose again to Restart.`;
-        computerScore = 0;
-        playerScore = 0;
+        disableBtn();
     }
 }
 
@@ -47,6 +52,8 @@ else if ((playerSelection === 'Rock' && computerSelection === 'Rock') ||
     document.getElementById('result').innerHTML = result;
     return;
 }
+
+resetBtn.addEventListener('click', () => location.reload());
 
 btn.forEach (button => {
   button.addEventListener('click', function() {
