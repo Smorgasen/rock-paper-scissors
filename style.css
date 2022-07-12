@@ -58,6 +58,7 @@ h3 {
 .optionBtn {
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
 .optionBtn button {
     border: 5px dashed black;
@@ -118,3 +119,5 @@ h3 {
     border: 5px dashed black;
 
 }
+
+/* <a href="https://www.flaticon.com/free-icons/pixel" title="pixel icons">Pixel icons created by Dooder - Flaticon</a>
