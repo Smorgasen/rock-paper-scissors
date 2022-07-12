@@ -1,5 +1,5 @@
 let playerSelection;
-let computerSelection = ;
+let computerSelection
 let playerScore = 0;
 let computerScore = 0;
 let result = '';
@@ -25,9 +25,10 @@ if ((playerSelection === 'Rock' && computerSelection === 'Scissors') ||
     (playerSelection === 'Scissors' && computerSelection === 'Paper') ||
     (playerSelection === 'Paper' && computerSelection === 'Rock')) {
     playerScore++;
-    result = `<br>You won! ${playerSelection} beats ${computerSelection}. <br><br> Player : ${playerScore} <br> Computer: ${computerScore} <br><br>`;
+    result = `You won! ${playerSelection} beats ${computerSelection}.`;
     if (playerScore == 5) {
-        result += `<strong>Player wins!</strong> Congratulations! You may continue your existence inside the Matrix.<br><br> Choose again to Restart.`;
+        result = `Player wins! Congratulations! You may continue your existence
+        inside the Matrix.`;
         disableBtn();
     }
 }
@@ -36,10 +37,10 @@ else if ((playerSelection === 'Rock' && computerSelection === 'Paper') ||
     (playerSelection === 'Paper' && computerSelection === 'Scissors') ||
     (playerSelection === 'Scissors' && computerSelection === 'Rock')) {
     computerScore++;
-    result = `<br>You lose! ${playerSelection} is beaten by ${computerSelection}. <br><br> Player : ${playerScore} <br> Computer: ${computerScore} <br><br>`;
+    result = `You lose! ${playerSelection} is beaten by ${computerSelection}.`;
     if (computerScore == 5) {
-        result += `<strong>Computer wins!</strong> The Rise of the Machines is close.
-        Prepare to the worst.<br><br> Choose again to Restart.`;
+        result = `Computer wins! The Rise of the Machines is close.
+        Prepare to the worst.`;
         disableBtn();
     }
 }
@@ -47,9 +48,13 @@ else if ((playerSelection === 'Rock' && computerSelection === 'Paper') ||
 else if ((playerSelection === 'Rock' && computerSelection === 'Rock') ||
     (playerSelection === 'Paper' && computerSelection === 'Paper') ||
     (playerSelection === 'Scissors' && computerSelection === 'Scissors')) {
-    result = `<br>It's a tie! Both choose ${playerSelection}.<br><br> Player : ${playerScore} <br> Computer: ${computerScore} <br><br>`;
+    result = `It's a tie! Both choose ${playerSelection}.`;
     }
-    document.getElementById('result').innerHTML = result;
+    document.getElementById('play-score').textContent = playerScore
+    document.getElementById('comp-score').textContent = computerScore
+    document.getElementById('play-cho').textContent = playerSelection
+    document.getElementById('comp-cho').textContent = computerSelection
+    document.getElementById('result').textContent = result;
     return;
 }
 
