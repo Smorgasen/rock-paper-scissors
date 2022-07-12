@@ -24,25 +24,33 @@ h3 {
 .choice {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    margin: 20px 0;
 }
-.left-choice {
-    display: flex;
-    flex-direction: column;
-}
-.left-choice p {
-
-}
-#play-cho {
-
-}
+.left-choice,
 .right-choice {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 250px
 }
-.right-choice p {
 
-}
+#play-cho,
 #comp-cho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    height: 80px;
+    width: 200px;
+}
+
+.right-choice p,
+.left-choice p {
 
 }
 
@@ -59,25 +67,32 @@ h3 {
 .scores {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    margin: 20px 0;
 }
-.left-score {
-    display: flex;
-    flex-direction: column;
-}
-.left-score p {
-
-}
-#play-score {
-
-}
+.left-score,
 .right-score {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 250px
 }
-.right-score p {
 
-}
+#play-score,
 #comp-score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    height: 80px;
+    width: 200px;
+}
+.left-score p,
+.right-score p {
 
 }
 
