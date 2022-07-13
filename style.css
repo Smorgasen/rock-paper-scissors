@@ -3,7 +3,40 @@
 body {
     font-family: 'Press Start 2P', cursive;
 }
-
+.theme-light {
+  --color-primary: #faea3e;
+  --color-secondary: #fbfbfe;
+  --color-accent: #fd6f53;
+  --font-color: #000000;
+}
+.theme-dark {
+  --color-primary: #17ed90;
+  --color-secondary: #243133;
+  --color-accent: #12cdea;
+  --font-color: #ffffff;
+}
+.main-page {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: var(--color-secondary);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-page h1 {
+  color: var(--font-color);
+}
+.main-page button {
+  color: var(--font-color);
+  background: var(--color-primary);
+  border: 5px dashed black;
+  padding: 20px;
+  width: 200px;
+  margin-top: 20px;
+  font-family: 'Press Start 2P', cursive;
+  cursor: pointer;
+}
 /* header */
 .header {
     display: flex;
@@ -74,9 +107,6 @@ h3 {
     padding: 30px;
 }
 .result-body p {
-
-}
-#result {
 
 }
 
