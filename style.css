@@ -98,10 +98,22 @@ h3 {
 }
 
 /* result block*/
+.result-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .result-body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 5px dashed black;
+    width: 400px;
+    height: 80px;
+    padding: 30px;
 }
 .result-body p {
 
@@ -114,10 +126,23 @@ h3 {
 .reset-btn {
     display: flex;
     justify-content: center;
+    align-items: center;
+
 }
 #reset {
     border: 5px dashed black;
-
+    padding: 20px;
+    width: 200px;
+    margin-top: 20px;
+    font-family: 'Press Start 2P', cursive;
 }
-
-/* <a href="https://www.flaticon.com/free-icons/pixel" title="pixel icons">Pixel icons created by Dooder - Flaticon</a>
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.footer a {
+    font-size: 10px;
+}
