@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 }
 h1 {
 
@@ -19,39 +20,26 @@ h2 {
 h3 {
 
 }
-
-/* choice blocks*/
-.choice {
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    text-align: center;
-    margin: 20px 0;
+    gap: 60px;
 }
-.left-choice,
-.right-choice {
+.left-choice-selection,
+.right-choice-selection {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    width: 250px
-}
-
-#play-cho,
-#comp-cho {
-    display: flex;
     align-items: center;
     justify-content: center;
-    border: 5px dashed black;
-    height: 80px;
     width: 200px;
+    height: 200px;
+    gap: 60px;
+    border: 5px dashed black;
 }
-
-.right-choice p,
-.left-choice p {
-
+.left-choice-selection span,
+.right-choice-selection span {
+    display: flex;
 }
 
 /* option buttons */
@@ -62,39 +50,9 @@ h3 {
 }
 .optionBtn button {
     border: 5px dashed black;
-}
-
-/* scores blocks */
-.scores {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    text-align: center;
-    margin: 20px 0;
-}
-.left-score,
-.right-score {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    width: 250px
-}
-
-#play-score,
-#comp-score {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 5px dashed black;
-    height: 80px;
-    width: 200px;
-}
-.left-score p,
-.right-score p {
-
+    width: 160px;
+    height: 160px;
+    cursor: pointer;
 }
 
 /* result block*/
@@ -123,7 +81,7 @@ h3 {
 }
 
 /*  reset button */
-.reset-btn {
+ .reset-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,6 +93,7 @@ h3 {
     width: 200px;
     margin-top: 20px;
     font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
 }
 .footer {
     display: flex;
@@ -149,3 +108,85 @@ h3 {
     color: black;
     margin-top: 5px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* choice blocks*/
+/* .choice {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    margin: 20px 0;
+}
+.left-choice,
+.right-choice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 250px
+}
+
+#play-cho,
+#comp-cho {
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* border: 5px dashed black;
+    height: 80px;
+    width: 200px; */
+}
+
+/* .right-choice p,
+.left-choice p {
+
+} */
+
+
+
+/* scores blocks */
+/* .scores {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    margin: 20px 0;
+}
+.left-score,
+.right-score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 250px
+}
+
+#play-score,
+#comp-score {
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* border: 5px dashed black;
+    height: 80px;
+    width: 200px; */
+/* }
+.left-score p,
+.right-score p {
+
+} */
