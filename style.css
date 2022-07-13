@@ -33,7 +33,7 @@ h3 {
     align-items: center;
     justify-content: center;
     width: 200px;
-    height: 200px;
+    height: 5px;
     gap: 60px;
     border: 5px dashed black;
 }
@@ -100,7 +100,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 90px;
 }
 .footer a {
     font-size: 10px;
@@ -108,85 +108,3 @@ h3 {
     color: black;
     margin-top: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* choice blocks*/
-/* .choice {
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    gap: 50px;
-    text-align: center;
-    margin: 20px 0;
-}
-.left-choice,
-.right-choice {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    width: 250px
-}
-
-#play-cho,
-#comp-cho {
-    display: flex;
-    align-items: center;
-    justify-content: center; */
-    /* border: 5px dashed black;
-    height: 80px;
-    width: 200px; */
-}
-
-/* .right-choice p,
-.left-choice p {
-
-} */
-
-
-
-/* scores blocks */
-/* .scores {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 50px;
-    text-align: center;
-    margin: 20px 0;
-}
-.left-score,
-.right-score {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    width: 250px
-}
-
-#play-score,
-#comp-score {
-    display: flex;
-    align-items: center;
-    justify-content: center; */
-    /* border: 5px dashed black;
-    height: 80px;
-    width: 200px; */
-/* }
-.left-score p,
-.right-score p {
-
-} */
