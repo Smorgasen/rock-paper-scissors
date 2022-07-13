@@ -13,9 +13,6 @@ body {
   align-items: center;
 }
 
-.main-page h1 {
-  color: var(--font-color);
-}
 .main-page button {
     color: var(--font-color);
     background: var(--color-primary);
@@ -26,26 +23,25 @@ body {
     font-family: 'Press Start 2P', cursive;
     cursor: pointer;
 }
-
-
 :root {
     --primary-color: #faea3e;
     --secondary-color: #fbfbfe;
     --font-color: #424242;
     --bg-color: #fff;
 }
-[data-theme="dark"] {
-    --color-primary: #17ed90;
-    --color-secondary: #243133;
-    --color-accent: #12cdea;
-    --font-color: #ffffff;
-      }
 [data-theme="light"] {
     --color-primary: #faea3e;
     --color-secondary: #fbfbfe;
     --color-accent: #fd6f53;
     --font-color: #000000;
 }
+[data-theme="dark"] {
+    --color-primary: #bd7722;
+    --color-secondary: #121f40;
+    --color-accent: #12cdea;
+    --font-color: #ffffff;
+}
+
 
 .theme-switch-wrapper {
     display: flex;
@@ -55,6 +51,10 @@ body {
     justify-content: flex-start;
     gap: 20px;
 }
+/* .theme-switch-wrapper p {
+    color: var(--font-color);
+    font-size: 10px;
+} */
 .theme-switch {
     display: inline-block;
     height: 34px;
@@ -122,16 +122,9 @@ input:checked + .slider:before {
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+    color: var(--font-color);
 }
-h1 {
 
-}
-h2 {
-
-}
-h3 {
-
-}
 .main {
     display: flex;
     justify-content: center;
@@ -147,7 +140,8 @@ h3 {
     width: 200px;
     height: 5px;
     gap: 60px;
-    border: 5px dashed black;
+    border: 5px dashed var(--font-color);
+    color: var(--font-color);
 }
 .left-choice-selection span,
 .right-choice-selection span {
@@ -161,7 +155,7 @@ h3 {
     gap: 20px;
 }
 .optionBtn button {
-    border: 5px dashed black;
+    border: 5px dashed var(--font-color);
     width: 160px;
     height: 160px;
     cursor: pointer;
@@ -173,6 +167,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: var(--font-color);
 }
 .result-body {
     display: flex;
@@ -180,7 +175,7 @@ h3 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    border: 5px dashed black;
+    border: 5px dashed var(--font-color);
     width: 400px;
     height: 80px;
     padding: 30px;
@@ -197,7 +192,7 @@ h3 {
 
 }
 #reset {
-    border: 5px dashed black;
+    border: 5px dashed var(--font-color);
     padding: 20px;
     width: 200px;
     margin-top: 20px;
@@ -209,11 +204,19 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 90px;
+    margin-top: 10px;
+    color: var(--font-color);
 }
 .footer a {
     font-size: 10px;
     text-decoration: underline;
-    color: black;
     margin-top: 5px;
+    color: var(--font-color);
+}
+.links {
+    background-color: white;
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px;
+    border: 5px dashed black;
 }
