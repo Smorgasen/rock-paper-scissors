@@ -23,12 +23,12 @@ body {
     font-family: 'Press Start 2P', cursive;
     cursor: pointer;
 }
-:root {
+/* :root {
     --primary-color: #faea3e;
     --secondary-color: #fbfbfe;
     --font-color: #424242;
     --bg-color: #fff;
-}
+} */
 [data-theme="light"] {
     --color-primary: #faea3e;
     --color-secondary: #fbfbfe;
