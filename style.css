@@ -191,6 +191,7 @@ input:checked + .slider:before {
     margin-top: 20px;
     font-family: 'Press Start 2P', cursive;
     cursor: pointer;
+    color: black;
 }
 .footer {
     display: flex;
