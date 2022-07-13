@@ -145,4 +145,7 @@ h3 {
 }
 .footer a {
     font-size: 10px;
+    text-decoration: underline;
+    color: black;
+    margin-top: 5px;
 }
