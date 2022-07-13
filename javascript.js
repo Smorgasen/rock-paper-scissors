@@ -11,29 +11,28 @@ function disableBtn() {
         button.disabled = true;
     });
 }
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
-function setTheme(themeName) {
-    localStorage.setItem('theme', themeName);
-    document.documentElement.className = themeName;
-}
-
-function toggleTheme() {
-    if (localStorage.getItem('theme') === 'theme-dark') {
-        setTheme('theme-light');
+toggleSwitch.addEventListener('change', switchTheme, false);
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark'); //add this
     }
     else {
-        setTheme('theme-dark');
-        document.getElementById('switch').toggle("fa-thumbs-down");
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light'); //add this
     }
 }
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 
-(function () {
-        if (localStorage.getItem('theme') === 'theme-dark') {
-            setTheme('theme-dark');
-        } else {
-            setTheme('theme-light');
-        }
-    })();
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
+}
 
 function computerPlay() {
     options = ['Rock', 'Paper', 'Scissors'];
