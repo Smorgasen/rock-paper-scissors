@@ -10,13 +10,13 @@ body {
     --bg-color: #fff;
 }
 [data-theme="light"] {
-    --color-primary: #faea3e;
+    --color-primary: #3f65c7;
     --color-secondary: #fbfbfe;
     --color-accent: #fd6f53;
     --font-color: #000000;
 }
 [data-theme="dark"] {
-    --color-primary: #bd7722;
+    --color-primary: #faea3e;
     --color-secondary: #121f40;
     --color-accent: #12cdea;
     --font-color: #ffffff;
@@ -41,7 +41,11 @@ body {
     font-family: 'Press Start 2P', cursive;
     cursor: pointer;
 }
-
+.upper-header {
+    display: flex;
+    width: 99%;
+    justify-content: flex-end;
+}
 .theme-switch-wrapper {
     display: flex;
     flex-direction: row;
@@ -82,20 +86,22 @@ body {
     position: absolute;
     transition: .4s;
     width: 26px;
+    /* background-image: url(images/day.png); */
+    /* outline: none; */
 }
 
 input + .slider {
-    background-color: #121f40;
-    /* background-size: cover; */
-    /* outline: none; */
-    /* background-image: url(images/pixel-day.png); */
-    /* transition: background-image .90s; */
+    background-size: cover;
+    outline: none;
+    background-image: url(images/day-wide.png);
+    transition: background-image .90s;
+    /* background-color: #121f40; */
     /* box-shadow: 5px 5px 10px var(--font-color); */
 }
 input:checked + .slider {
     background-color: #bfb00d;
-    /* background-image: url(images/pixel-night.png); */
-    /* transition: background-image .90s; */
+    background-image: url(images/night-wide.png);
+    transition: background-image .90s;
 }
 
 input:checked + .slider:before {
@@ -143,7 +149,7 @@ input:checked + .slider:before {
     gap: 20px;
 }
 .optionBtn button {
-    border: 5px dashed var(--font-color);
+    border: 5px dashed black;
     width: 160px;
     height: 160px;
     cursor: pointer;
@@ -168,9 +174,6 @@ input:checked + .slider:before {
     height: 80px;
     padding: 30px;
 }
-.result-body p {
-
-}
 
 /*  reset button */
  .reset-btn {
@@ -180,7 +183,7 @@ input:checked + .slider:before {
 
 }
 #reset {
-    border: 5px dashed var(--font-color);
+    border: 5px dashed black;
     padding: 20px;
     width: 200px;
     margin-top: 20px;
@@ -197,7 +200,7 @@ input:checked + .slider:before {
     color: var(--font-color);
 }
 .footer a {
-    font-size: 10px;
+    font-size: 8px;
     text-decoration: underline;
     margin-top: 5px;
     color: var(--font-color);
