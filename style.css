@@ -10,7 +10,7 @@ body {
     --bg-color: #fff;
 }
 [data-theme="light"] {
-    --color-primary: #3f65c7;
+    --color-primary: #5482f5;
     --color-secondary: #fbfbfe;
     --color-accent: #fd6f53;
     --font-color: #000000;
