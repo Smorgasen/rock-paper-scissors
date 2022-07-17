@@ -2,6 +2,8 @@
 
 <strong> Web representation of <em>Rock-Paper-Scissors</em> game. </strong> 
 
+Check out the website live <a href="https://smorgasen.github.io/rock-paper-scissors/" target="_blank"> here </a>.
+
 <img src="images/rock-paper-scissors-day.png" alt="Website layout day">
 <img src="images/rock-paper-scissors-night.png" alt="Website layout night">
 
