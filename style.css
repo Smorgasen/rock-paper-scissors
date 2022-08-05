@@ -86,8 +86,6 @@ body {
     position: absolute;
     transition: .4s;
     width: 26px;
-    /* background-image: url(images/day.png); */
-    /* outline: none; */
 }
 
 input + .slider {
@@ -95,9 +93,8 @@ input + .slider {
     outline: none;
     background-image: url(images/day-wide.png);
     transition: background-image .90s;
-    /* background-color: #121f40; */
-    /* box-shadow: 5px 5px 10px var(--font-color); */
 }
+
 input:checked + .slider {
     background-color: #bfb00d;
     background-image: url(images/night-wide.png);
@@ -107,8 +104,6 @@ input:checked + .slider {
 input:checked + .slider:before {
     transform: translateX(26px);
 }
-
-
 
 /* header */
 .header {
@@ -211,4 +206,15 @@ input:checked + .slider:before {
     gap: 20px;
     padding: 10px 20px;
     border: 5px dashed black;
+}
+
+/* buttons pseudo */
+
+button:hover {
+    background-color: #9ecbff;
+    transition: 0.3s;
+}
+
+button:active {
+    background-color: #fd6f53;
 }
